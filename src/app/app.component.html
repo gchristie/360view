@@ -1,29 +1,43 @@
-<hello name="{{ name }}"></hello>
+
+<H1>Gogs.Run</H1>
 
 
-   
-   <BR> <H1>09/11/2019 : Marathon Infos</H1> 
-   <BR> <a href="http://rungogsrun.stackblitz.io/" target="blank" > <img width="200" Height="300" src="http://gogs.run/images/mar_infos.png"/> </a> 
-   <BR> 
-   
-   <BR> <H1>07/30/2019 : My Half Marathon List</H1> 
-   <BR> <a href="http://gogs.run/HalfMarathons.html" target="blank"> <img width="600" Height="100" src="http://gogs.run/images/HalfMarathons.jpg"/> </a> 
-   <BR> 
- 
-  
-  <BR> <H1>06/07/2019 : My Marathon List</H1> 
-   <BR> <a href="http://gogs.run/Marathons.html" target="blank"> <img width="600" Height="100" src="http://gogs.run/images/Marathons.jpg"/> </a> 
-   <BR>   
-  
-   <BR> <H1>04/15/2019 : 2019 Boston Marathon</H1> 
-   <BR> <a href="http://gogs.run/BostonMarathon2019.html" target="blank"> <img width="320" Height="400" src="http://gogs.run/images/unicorn_2019.jpg"/> </a> <BR> 
-  
-   <BR> <H1>12/02/2018 : 2018 RNR San Antonio</H1> 
-   <BR>Race Photos
-   <BR> <a href="http://gogs.run/RNR_SA_2018.html" target="blank"> <img width="387" Height="579" src="http://gogs.run/images/GotKilt.jpg"/> </a>
-    <BR> 
- 
-   <BR> <H1>04/28/2018 : 2018 IronMan Texas</H1>
-    <BR>Race Photos
-   <BR> <a href="http://gogs.run/2018IronManTexas.html" target="blank"> <img width="600" Height="400" src="http://gogs.run/images/IMTX_2018.png"/> </a> 
-   <BR> 
+
+<div id="photosphere"></div>
+
+<!-- http://gogs.run/src/photo-sphere-viewer.min.css-->
+<link rel="stylesheet" href="http://gogs.run/src/photo-sphere-viewer.min.css">
+
+<script src="http://gogs.run/src/three.min.js"></script>
+
+<script src="http://gogs.run/src/polyfill.min.js"></script>
+
+<script src="http://gogs.run/src/dot.min.js"></script>
+
+<script src="http://gogs.run/src/uevent.min.js"></script>
+
+<script src="http://gogs.run/src/photo-sphere-viewer.min.js"></script>
+
+<!-- http://gogs.run/images/LEXI360.JPG -->
+<!-- http://gogs.run/images/LEXI360.JPG -->
+<!-- https://photo-sphere-viewer.js.org/assets/Bryce-Canyon-National-Park-Mark-Doliner.jpg -->
+<!-- http://gogs.run/images/Bryce-Canyon-National-Park-Mark-Doliner.jpg  -->
+
+<script>
+  var PSV = new PhotoSphereViewer({
+    panorama: "http://gogs.run/images/LEXI360.JPG",
+    container: 'photosphere',
+    caption: '',
+    loading_img: "http://gogs.run/src/photosphere-logo.gif",
+    navbar: 'autorotate zoom download caption fullscreen',
+    default_fov: 70,
+    default_lat: 0.3,
+    mousewheel: false,
+    touchmove_two_fingers: true,
+    size: {
+      height: 500
+    }
+  });
+</script>
+
+
